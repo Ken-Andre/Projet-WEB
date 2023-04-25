@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tableau de bord Admin</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">Tableau de bord Admin</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Déconnexion</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 bg-light sidebar">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Produits</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-10">
+				<h1>Produits</h1>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProductModal">Ajouter un produit</button>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Nom</th>
+							<th>Prix</th>
+							<th>Quantité en stock</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="productList">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="addProductModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Ajouter un produit</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form id="addProductForm">
+						<div class="form-group">
+							<label for="productName">Nom du produit:</label>
+							<input type="text" class="form-control" id="productName" placeholder="Nom du produit" required>
+						</div>
+						<div class="form-group">
+							<label for="productPrice">Prix:</label>
+							<input type="number" class="form-control" id="productPrice" placeholder="Prix" required>
+						</div>
+						<div class="form-group">
+							<label for="productQuantity">Quantité en stock:</label>
+							<input type="number" class="form-control" id="productQuantity" placeholder="Quantité en stock" required>
+						</div>
+						<button type="submit" class="btn btn-primary">Ajouter</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="editProductModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Modifier un produit</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form id="editProductForm">
+						<input type="hidden" id="productId">
+						<div class="form-group">
+							<label for="editProductName">Nom du produit:</label>
+							<input type="text" class="form-control" id="editProductName" placeholder="Nom du produit" required>
+						</div>
+						<div class="form-group">
+							<label for="editProductPrice">Prix:</label>
+							<input type="number" class="form-control" id="editProductPrice" placeholder="Prix" required>
+						</div>
+						<div class="form-group">
+							<label for="editProductQuantity">Quantité en stock:</label>
+							<input type="number" class="form-control" id="editProductQuantity" placeholder="Quantité en stock" required>
+						</div>
+						<button type="submit" class="btn btn-primary">Enregistrer</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			// Liste des produits
+			var products = [
+				{
+					id: 1,
+					name: "Produit 1",
+					price: 10.99,
+					quantity: 20
+				},
+				{
+					id: 2,
+					name: "Produit 2",
+					price: 20.99,
+					quantity: 15
+				},
+				{
+					id: 3,
+					name: "Produit 3",
+					price: 5.99,
+					quantity: 30
+				}
+			];
+
+			// Afficher la liste des produits
+			function displayProductList() {
+				var productList = $("#productList");
+				productList.empty();
+				for (var i = 0; i < products.length; i++) {
+					var product = products[i];
+					var row = $("<tr>");
+					row.append($("<td>").text(product.name));
+					row.append($("<td>").text(product.price));
+					row.append($("<td>").text(product.quantity));
+					row.append($("<td>").html('<button class="btn btn-info btn-sm editProductBtn"
