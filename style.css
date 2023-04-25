@@ -1367,3 +1367,68 @@ label {
 
 
 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.search input {
+  width: 200px;
+  height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.icons i {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
