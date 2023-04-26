@@ -1,0 +1,28 @@
+/----------*********BDD*******-----\
+
+
+    La Table "utilisateurs" - pour stocker les informations d'inscription de chaque utilisateur, y compris le nom, le prénom, l'adresse e-mail et le mot de passe.
+    
+    La Table "activités" - pour stocker les informations sur les activités proposées par le BDE, y compris le titre, la description, la date, l'heure et le coût éventuel.
+    La Table "activités_inscriptions" - pour stocker les inscriptions des utilisateurs aux différentes activités.
+    La Table "événements_passés" - pour stocker les informations sur les événements passés organisés par le BDE, y compris les photos, les commentaires, la date et l'emplacement.
+    La Table "boutique" - pour stocker les informations sur les produits disponibles à l'achat, y compris le nom, la description, le prix, la quantité en stock et la catégorie.
+    La Table "commandes" - pour stocker les informations sur les commandes passées par les utilisateurs, y compris le nom et l'adresse de livraison, les produits commandés, le prix total et la date de commande.
+    La Table "administrateurs" - pour stocker les informations d'identification des membres de l'équipe du BDE qui ont accès à l'interface d'administration.
+    La Table "inscriptions" - pour stocker les inscriptions des utilisateurs enregistrés pour les différentes sections du site.
+
+/* footer */
+BDE
+Contact
+Activites
+Aide /FAQ
+
+Confidentialité
+Conditions d'utilisations
+
+Home
+Shop/Partner
+Shop/Cart
+
+Home/Confidentialite
+Home/Conditions d'utilisations
