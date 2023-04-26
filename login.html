@@ -1,74 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Connexion</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <!-- Chargement des fichiers CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"  />
+  <!-- Chargement des fichiers CSS personnalisés -->
+  <link rel="stylesheet" href="css/login.css">
 </head>
-<body>
-  <div class="background-image"></div>
-  
-    <!--<h1>Connectez-vous</h1>
-    <form>
-      <label for="email">Adresse e-mail</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="password">Mot de passe</label>
-      <input type="password" id="password" name="password" required>
-
-      <button type="submit">Se connecter</button>
-    </form> -->
-
-  <section class="h-100 gradient-form" style="background-color: #eee;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col">
-        <div class="card rounded-3 text-black">
-          <div class="row ">
-            <div class="col-lg-6">
-              <div class="card-body p-md-5 mx-md-4">
-
-                <div class="text-center">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    style="width: 185px;" alt="logo">
-                  <h4 class="mt-1 mb-5 pb-1">Users Login</h4>
-                </div>
-
-                <form>
-                  <p>Please login to your account</p>
-
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Phone number or email address" />
-                    <label class="form-label" for="form2Example11">Username</label>
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" />
-                    <label class="form-label" for="form2Example22">Password</label>
-                  </div>
-
-                  <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                      in</button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" class="btn btn-outline-danger">Create new</button>
-                  </div>
-
-                </form>
-
-              </div>
-            </div>
-            
-          </div>
+<body class="gradient-background">
+<!-- Conteneur principal -->
+<div class="container d-flex flex-column vh-100 justify-content-center align-items-center">
+  <!-- Formulaire de login -->
+  <div class="row">
+    <div class="col-md-2 col-lg-4">
+      <form class="card ">
+        <!-- Logo -->
+        <div class="text-center mb-4">
+          <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" alt="" width="72" height="57"> -->
+          <h1 class="h3 mb-3 fw-normal">Login</h1>
         </div>
-      </div>
+        <!-- Champ "Username" -->Username
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="username" placeholder="Username">
+        </div>
+        <!-- Champ "Password" -->Password
+        <div class="form-floating mb-3">
+
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <!-- Bouton de login -->
+        <button class="w-75 btn btn-primary" type="submit">Sign in</button>
+        <!-- Lien "Create new" -->
+        <div class="mb-4 text-center">
+          Don't have an account ?<a href="signin.html">Create new</a>
+        </div>
+      </form>
     </div>
   </div>
-</section>
+</div>
+<!-- Chargement des fichiers JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-p7wKJOQOuS7YY1xRiR6jFmO9MzV4m3deW8kNlKw6Kf0v0pZ6W0C7VrjByxJh7bX9JZu1H4y+Df4t7dNtMn1J8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-lJzNbl6jA+jNiTJY6TcqRZ/2JZVjGq3d3L9Ev9fZKj7eJrbwA2QzVLLAeZu+7VrNbB+uE7VX9+4vz8bI4wY+Yw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+</html>
