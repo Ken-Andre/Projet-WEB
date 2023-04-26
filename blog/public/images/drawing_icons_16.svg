@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="drawing_icons_16.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="27.975793"
+     inkscape:cx="8.1320304"
+     inkscape:cy="8.7396986"
+     inkscape:window-width="1920"
+     inkscape:window-height="934"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <font
+       horiz-adv-x="16"
+       horiz-origin-y="0"
+       id="font1246">
+      <font-face
+         font-family="SVGFont"
+         units-per-em="16"
+         cap-height="0"
+         x-height="0"
+         ascent="0"
+         descent="0"
+         id="font-face1244" />
+    </font>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="color:#000000;fill:#000000;-inkscape-stroke:none"
+       d="m 10.341797,2.4179688 -2.6035158,1.6816406 -2.6503906,-1.5 L 5.109375,6.1347656 5.9355469,6.8144531 7.7070312,7.6503906 8.3144531,7.3203125 9.4414063,6.6308594 10.308594,5.8046875 Z M 9.3222656,4.265625 9.3125,5.3730469 8.828125,5.8339844 7.8144531,6.4550781 7.6757812,6.5292969 6.4746094,5.9628906 6.1074219,5.6601562 6.0976562,4.3203125 7.7714844,5.2695312 8.0273438,5.1035156 Z"
+       id="path857"
+       inkscape:export-filename="/home/silentsky/Pictures/images/path857.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+  </g>
+</svg>
