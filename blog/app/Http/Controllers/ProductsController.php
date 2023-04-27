@@ -12,10 +12,14 @@ class ProductsController extends Controller
     //get access to the shop
     public function index()
     {
-        $products= products::inRandomOrder()->take(9)->get();
-
-        return view('shop',['products'=> $products]);
+        return view('shop');
     }
+
+    public function shop_single()
+    {
+        return view('products.shop_single');
+    }
+
 
     public function viewByCategory( $category){
             $products = products::where('category',$category)->get();

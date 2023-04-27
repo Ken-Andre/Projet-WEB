@@ -7,9 +7,9 @@
                     <div class="widget">
                         <h3>BDE</h3>
                         <ul class="list-unstyled">
-                            <li><a href="contact.html">Contact us</a></li>
-                            <li><a href="manifestations.html">Activites</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="{{route('contact')}}">Contact us</a></li>
+                            <li><a href="{{route('events')}}">Activities</a></li>
+                            <li><a href="{{route('faq')}}">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -17,8 +17,8 @@
                     <div class="widget">
                         <h3>Mentions legales</h3>
                         <ul class="list-unstyled">
-                            <li><a href="confidentialite.html">Confidentialite</a></li>
-                            <li><a href="conditionsutilisation.html">Conditions d'utilisations</a></li>
+                            <li><a href="{{route('conf')}}">Confidentialite</a></li>
+                            <li><a href="{{route('conditions')}}">Conditions d'utilisations</a></li>
                         </ul>
                     </div>
                 </div>
@@ -26,8 +26,8 @@
                     <div class="widget">
                         <h3>Shop</h3>
                         <ul class="list-unstyled">
-                            <li><a href="shop.html">Store</a></li>
-                            <li><a href="partner.html">Be Our Partner</a></li>
+                            <li><a href="{{route('products')}}">Store</a></li>
+                            <li><a href="{{route('partner')}}">Be Our Partner</a></li>
                         </ul>
                     </div>
                 </div>

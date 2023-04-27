@@ -24,4 +24,27 @@ class UserController extends Controller
 
     }
 
+
+    public function admin()
+    {
+
+        return view('users.admin');
+
+    }
+
+    public function login()
+    {
+
+        return view('users.login');
+
+    }
+
+    public function signin()
+    {
+
+        return view('users.signin');
+
+    }
+
+
 }

@@ -42,7 +42,7 @@
 @stack('scripts')
 
 
-// verifie la performance du site et le comportement des utilisateurs via google analytics
+<!-- verifie la performance du site et le comportement des utilisateurs via google analytics-->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

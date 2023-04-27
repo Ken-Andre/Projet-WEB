@@ -37,7 +37,7 @@
                         <li class="has-children">
                             <a href="#">Activities</a>
                             <ul class="dropdown">
-                                <li><a href="#">suggestions box</a></li>
+                                <li><a href="{{route('suggestions_box')}}">suggestions box</a></li>
                                 <li class="has-children">
                                     <a href="{{route('events')}}">events</a>
                                     <ul class="dropdown">
@@ -47,9 +47,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="{{route('shop')}}">Shop</a></li>
+                        <li><a href="{{route('products')}}">Shop</a></li>
                         <li class="active"><a href="{{route('contact')}}">Contact</a></li>
-                        <li ><a href="admin.html">Admin</a></li>
+                        <li ><a href="{{route('admin')}}">Admin</a></li>
                     </ul>
                     <div class="menu-icons">
 
@@ -67,7 +67,7 @@
                             </svg>
                         </a>
 
-                        <a href="cart.html" class="cart">
+                        <a href="{{route('cart')}}" class="cart">
                             <span class="item-in-cart">2</span>
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
@@ -88,7 +88,7 @@
             <div class="row align-items-end">
                 <div class="col-lg-7">
                     <h1>Contact Us</h1>
-                    <p class="mb-4"><a href="index.html">Home</a> / <strong>Contact</strong></p>
+                    <p class="mb-4"><a href="{{route('welcome')}}">Home</a> / <strong>Contact</strong></p>
                 </div>
             </div>
         </div>
